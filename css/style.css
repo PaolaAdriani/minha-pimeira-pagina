@@ -13,6 +13,13 @@ h1{
     font-size: 60px; /*tamanho da fonte*/
     font-weight: 300;
 }
+
+/* Estilos para telas menores (celulares) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+}
 /*Modificando os subtítulos*/
 h2{
     color: #2a0074;
