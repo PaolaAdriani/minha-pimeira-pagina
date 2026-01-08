@@ -14,16 +14,10 @@ h1{
     font-weight: 300;
 }
 
-/* Estilos para telas menores (celulares) */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 24px;
-  }
-}
 /*Modificando os subtítulos*/
 h2{
-    color: #2a0074;
-    font-size: 40px;
+  font-size: clamp(2rem, 6vw, 4rem);
+  text-align: center;
 }
 
 .titulo-verde{   
@@ -94,6 +88,10 @@ a{
     line-height: 2.5;
     margin: 0 89px;
 }
+ form{
+    flex: 1 1 250px;
+ }
+
 button{
     background-color: white;
     border: 1px solid transparent;
