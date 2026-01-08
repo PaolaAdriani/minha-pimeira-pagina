@@ -1,0 +1,97 @@
+/*Para buscar referencias: https://www.w3schools.com/cssref/index.php */
+
+body{
+    /*alterando texto, font, cor de fundo e cor do texto*/
+    text-align: center;
+    font-family:Open Sans, sans-serif;
+    background-color: #8a71c9;
+    color: #ffffff;
+    margin: 0px;
+}
+
+h1{
+    font-size: 60px; /*tamanho da fonte*/
+    font-weight: 300;
+}
+/*Modificando os subtítulos*/
+h2{
+    color: #2a0074;
+    font-size: 40px;
+}
+
+.titulo-verde{   
+    color: #04ff9f;
+}
+
+
+.titulo-vermelho{
+    color: #FF9E9E;
+}
+
+.titulo-amarelo{
+    color: #ffe36d;
+}
+
+h3{
+    font-size: 22px;
+    font-style: italic;
+}
+
+p{
+    font-size: 20px;
+    line-height: 1,5; /*espeçamento entre linhas*/
+}
+/*unidades de larguras/ absolutas(px) ou relativas(%)*/
+/* width ou max-width*/
+/*Margens (margin) https://developer.mozilla.org/pt-BR/docs/Web/CSS/margin#:~:text=A%20propriedade%20margin%20do%20CSS,bottom%20%2C%20e%20margin%2Dleft%20. */
+section{
+    width: 60%; /*largura da seção*/
+    margin: 0 auto;   /*margens*/
+}
+
+section section{
+    width: 100%;
+}
+
+img{
+    width: 100%; /*tamanho das imagens*/
+}
+
+ul{
+    list-style-type: none; /*retirando numeração ou bolinhas da lista*/
+    line-height: 2;   /* Dobra o espaço entre as linhas */
+    padding-left: 0; /*Espaço interno entre o conteúdo do elemento e sua borda*/
+}
+
+a{
+    text-decoration: none;
+    color: #99ffff;
+    font-weight: 700;  /* Deixa o texto em negrito */
+}
+/*estilizando a classe principal/menu*/
+.principal{
+   background: #ff6cb5;
+   height: 40px;
+   max-width: 60%;
+   margin: 0 auto;
+ }
+
+.principal a{
+   color: #fff;
+   text-decoration: underline;
+   font-weight: normal;
+}
+
+.principal li{
+    display: inline-block; /*exibição dos elementos no menu*/
+    line-height: 2.5;
+    margin: 0 89px;
+}
+button{
+    background-color: white;
+    border: 1px solid transparent;
+    padding: 2px 20px;
+    border-radius: 3px;
+}
+
+/*forms com css https://www.devmedia.com.br/como-criar-formularios-html-sem-usar-tabelas-tableless/28278 */
