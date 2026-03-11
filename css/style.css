@@ -24,17 +24,14 @@ h2 {
 
 .titulo-verde {
   color: #04ff9f;
-  font-size: 26px;
 }
 
 .titulo-vermelho {
   color: #ff9e9e;
-  font-size: 26px;
 }
 
 .titulo-amarelo {
   color: #ffe36d;
-  font-size: 26px;
 }
 
 h3 {
@@ -42,12 +39,8 @@ h3 {
   font-style: italic;
 }
 
-h4 {
-  font-size: 24px;
-}
-
 p {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1, 5; /*espeçamento entre linhas*/
 }
 /*unidades de larguras/ absolutas(px) ou relativas(%)*/
@@ -120,7 +113,6 @@ a {
 
 form {
   flex: 1 1 250px;
-  font-size: 15px;
 }
 
 button {
