@@ -1,102 +1,133 @@
 /*Para buscar referencias: https://www.w3schools.com/cssref/index.php */
 
-body{
-    /*alterando texto, font, cor de fundo e cor do texto*/
-    text-align: center;
-    font-family:Open Sans, sans-serif;
-    background-color: #8a71c9;
-    color: #ffffff;
-    margin: 0px;
+body {
+  /*alterando texto, font, cor de fundo e cor do texto*/
+  text-align: center;
+  font-family:
+    Open Sans,
+    sans-serif;
+  background-color: #8a71c9;
+  color: #ffffff;
+  margin: 0px;
 }
 
-h1{
-    font-size: 60px; /*tamanho da fonte*/
-    font-weight: 300;
+h1 {
+  font-size: 60px; /*tamanho da fonte*/
+  font-weight: 300;
 }
 
 /*Modificando os subtítulos*/
-h2{
+h2 {
   font-size: clamp(2rem, 6vw, 4rem);
   text-align: center;
 }
 
-.titulo-verde{   
-    color: #04ff9f;
+.titulo-verde {
+  color: #04ff9f;
+  font-size: 26px;
 }
 
-
-.titulo-vermelho{
-    color: #FF9E9E;
+.titulo-vermelho {
+  color: #ff9e9e;
+  font-size: 26px;
 }
 
-.titulo-amarelo{
-    color: #ffe36d;
+.titulo-amarelo {
+  color: #ffe36d;
+  font-size: 26px;
 }
 
-h3{
-    font-size: 22px;
-    font-style: italic;
+h3 {
+  font-size: 24px;
+  font-style: italic;
 }
 
-p{
-    font-size: 20px;
-    line-height: 1,5; /*espeçamento entre linhas*/
+h4 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 24px;
+  line-height: 1, 5; /*espeçamento entre linhas*/
 }
 /*unidades de larguras/ absolutas(px) ou relativas(%)*/
 /* width ou max-width*/
 /*Margens (margin) https://developer.mozilla.org/pt-BR/docs/Web/CSS/margin#:~:text=A%20propriedade%20margin%20do%20CSS,bottom%20%2C%20e%20margin%2Dleft%20. */
-section{
-    width: 60%; /*largura da seção*/
-    margin: 0 auto;   /*margens*/
+section {
+  width: 60%; /*largura da seção*/
+  margin: 0 auto; /*margens*/
 }
 
-section section{
-    width: 100%;
+section section {
+  width: 100%;
 }
 
-img{
-    width: 100%; /*tamanho das imagens*/
+img {
+  width: 100%; /*tamanho das imagens*/
 }
 
-ul{
-    list-style-type: none; /*retirando numeração ou bolinhas da lista*/
-    line-height: 2;   /* Dobra o espaço entre as linhas */
-    padding-left: 0; /*Espaço interno entre o conteúdo do elemento e sua borda*/
-}
-
-a{
-    text-decoration: none;
-    color: #99ffff;
-    font-weight: 700;  /* Deixa o texto em negrito */
+a {
+  text-decoration: none;
+  color: #99ffff;
+  font-weight: 700; /* Deixa o texto em negrito */
+  font-size: 20px;
 }
 /*estilizando a classe principal/menu*/
-.principal{
-   background: #ff6cb5;
-   height: 40px;
-   max-width: 60%;
-   margin: 0 auto;
- }
+#principal {
+  background: #ff6cb5;
+  height: 80px;
+  margin: 0 auto;
 
-.principal a{
-   color: #fff;
-   text-decoration: underline;
-   font-weight: normal;
+  justify-content: space-between;
+  align-items: center; /*alinhamento vertical/mesma linha*/
+  /*Disposição dos elementos da barra de navegação*/
+  padding: 0 2rem; /*unidade relativa (rem) pixel/16*/
+  max-width: 1200px;
 }
 
-.principal li{
-    display: inline-block; /*exibição dos elementos no menu*/
-    line-height: 2.5;
-    margin: 0 89px;
+#principal a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: normal;
+  font-size: 20px;
 }
- form{
-    flex: 1 1 250px;
- }
 
-button{
-    background-color: white;
-    border: 1px solid transparent;
-    padding: 2px 20px;
-    border-radius: 3px;
+#principal .list {
+  list-style-type: none; /*retirando numeração ou bolinhas da lista*/
+  line-height: 4; /* Dobra o espaço entre as linhas */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 250px;
+  margin: 0 10px;
+}
+
+/* tablets ou telas médias */
+@media (max-width: 906px) {
+  #principal .list {
+    gap: 40px;
+  }
+}
+
+/* celular */
+@media (max-width: 740px) {
+  #principal .list {
+    gap: 20px;
+    font-size: 14px;
+  }
+}
+
+form {
+  flex: 1 1 250px;
+  font-size: 15px;
+}
+
+button {
+  background-color: white;
+  border: 1px solid transparent;
+  padding: 2px 20px;
+  border-radius: 3px;
 }
 
 /*forms com css https://www.devmedia.com.br/como-criar-formularios-html-sem-usar-tabelas-tableless/28278 */
