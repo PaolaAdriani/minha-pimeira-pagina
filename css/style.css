@@ -124,6 +124,10 @@ a {
   }
 }
 
+#nomes {
+  list-style: none;
+}
+
 form {
   flex: 1 1 250px;
   list-style-type: none;
@@ -134,7 +138,6 @@ button {
   border: 1px solid transparent;
   padding: 2px 20px;
   border-radius: 3px;
-  list-style: none;
 }
 
 /*forms com css https://www.devmedia.com.br/como-criar-formularios-html-sem-usar-tabelas-tableless/28278 */
