@@ -41,6 +41,7 @@ h3 {
 
 p {
   line-height: 1, 5; /*espeçamento entre linhas*/
+  font-size: 20px;
 }
 /*unidades de larguras/ absolutas(px) ou relativas(%)*/
 /* width ou max-width*/
@@ -69,12 +70,15 @@ a {
   background: #ff6cb5;
   height: 80px;
   margin: 0 auto;
+  display: flex;
 
-  justify-content: space-between;
+  justify-content: center;
   align-items: center; /*alinhamento vertical/mesma linha*/
   /*Disposição dos elementos da barra de navegação*/
   padding: 0 2rem; /*unidade relativa (rem) pixel/16*/
   max-width: 1200px;
+  margin: 0 auto; /*centralizando os elementos*/
+  height: 80px;
 }
 
 #principal a {
@@ -85,14 +89,16 @@ a {
 }
 
 #principal .list {
-  list-style-type: none; /*retirando numeração ou bolinhas da lista*/
-  line-height: 4; /* Dobra o espaço entre as linhas */
-
+  list-style: none;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 250px;
-  margin: 0 10px;
+  margin: 0; /* Garante que não haja espaço extra */
+  padding: 0;
+}
+
+#principal .hamburguer-menu {
+  display: none;
 }
 
 /* tablets ou telas médias */
@@ -102,16 +108,25 @@ a {
   }
 }
 
-/* celular */
 @media (max-width: 740px) {
+  #principal {
+    /* Muda de 'center' para 'flex-end' para empurrar o ícone para a direita */
+    justify-content: flex-end;
+  }
+
+  #principal .hamburguer-menu {
+    display: block;
+    cursor: pointer;
+  }
+
   #principal .list {
-    gap: 20px;
-    font-size: 14px;
+    display: none; /* Esconde os links */
   }
 }
 
 form {
   flex: 1 1 250px;
+  list-style-type: none;
 }
 
 button {
